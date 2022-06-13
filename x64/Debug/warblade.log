@@ -1,0 +1,74 @@
+﻿  Background.cpp
+  Bullet.cpp
+C:\Users\Roman\source\repos\warblade\Bullet.cpp(33,31): warning C4305: "argument": obcięcie z "double" do "float"
+  Enemy.cpp
+C:\Users\Roman\source\repos\warblade\Enemy.h(52,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(26,29): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(32,32): warning C4244: "=": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(38,19): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(50,29): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(56,32): warning C4244: "=": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(62,19): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(73,29): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(79,32): warning C4244: "=": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(85,19): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(147,32): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(157,23): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(181,32): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(191,23): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(223,25): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(231,21): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(256,25): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\Enemy.cpp(265,21): warning C4305: "=": obcięcie z "double" do "float"
+  Entity.cpp
+  GameState.cpp
+C:\Users\Roman\source\repos\warblade\Enemy.h(52,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\Roman\source\repos\warblade\GameState.cpp(78,51): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\GameState.cpp(83,36): warning C4244: "=": konwersja z "ULONGLONG" do "int", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\GameState.cpp(90,37): warning C4244: "=": konwersja z "ULONGLONG" do "int", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\GameState.cpp(157,36): warning C4244: "=": konwersja z "ULONGLONG" do "int", możliwa utrata danych
+C:\Users\Roman\source\repos\warblade\GameState.cpp(161,37): warning C4244: "=": konwersja z "ULONGLONG" do "int", możliwa utrata danych
+  GameSystem.cpp
+C:\Users\Roman\source\repos\warblade\Enemy.h(52,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+  Gui.cpp
+  Items.cpp
+  main.cpp
+C:\Users\Roman\source\repos\warblade\Enemy.h(52,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+  MainMenuState.cpp
+C:\Users\Roman\source\repos\warblade\Enemy.h(52,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+  Player.cpp
+C:\Users\Roman\source\repos\warblade\Player.cpp(44,31): warning C4305: "argument": obcięcie z "double" do "float"
+  GameSound.cpp
+  State.cpp
+C:\Users\Roman\source\repos\warblade\Enemy.h(52,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+  Generowanie kodu...
+  warblade.vcxproj -> C:\Users\Roman\source\repos\warblade\x64\Debug\warblade.exe
+  C:\Users\Roman\source\repos\warblade\Textures\backGround1texture.png
+  C:\Users\Roman\source\repos\warblade\Textures\backGround2texture.png
+  C:\Users\Roman\source\repos\warblade\Textures\DefaultBulletTexture.png
+  C:\Users\Roman\source\repos\warblade\Textures\enemyTexture.png
+  C:\Users\Roman\source\repos\warblade\Textures\ornejBullet.png
+  C:\Users\Roman\source\repos\warblade\Textures\playerTexture.png
+  C:\Users\Roman\source\repos\warblade\Textures\RedBulletTexture.png
+  C:\Users\Roman\source\repos\warblade\Textures\MainMenu\Background.jpg
+  C:\Users\Roman\source\repos\warblade\Textures\MainMenu\StartGameButton.png
+  9 File(s) copied
+  C:\Users\Roman\source\repos\warblade\Sounds\.ogg
+  C:\Users\Roman\source\repos\warblade\Sounds\backgroundMusic.ogg
+  C:\Users\Roman\source\repos\warblade\Sounds\bufferEnemySound.ogg
+  C:\Users\Roman\source\repos\warblade\Sounds\bulletShotSound.wav
+  C:\Users\Roman\source\repos\warblade\Sounds\killEnemySound.wav
+  C:\Users\Roman\source\repos\warblade\Sounds\killPlayerSound.wav
+  6 File(s) copied
