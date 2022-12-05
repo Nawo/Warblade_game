@@ -9,13 +9,13 @@ Bullet::Bullet(float pos_x, float pos_y, string type, string genus)
 	{
 		this->direction.x = 0.f;
 		this->direction.y = 1.f;
-		if (!defaultTexture.loadFromFile("Textures/DefaultBulletTexture.png"))
+		if (!defaultTexture.loadFromFile("../Textures/DefaultBulletTexture.png"))
 		{
 			cout << "LOAD ENEMY TEXTURE FAILED" << endl;
 		}
 		this->bulletSpeed = 20;
 		this->bullet.setTexture(defaultTexture);
-		this->bullet.scale(0.1f, 0.1f);
+		this->bullet.scale(Vector2f(0.1f, 0.1f));
 		this->bulletStrenght = 1.f;
 	}
 	if (this->bulletType == "playerShot")
@@ -24,18 +24,18 @@ Bullet::Bullet(float pos_x, float pos_y, string type, string genus)
 		this->direction.y = -1.f;
 		if (genus == "default")
 		{
-			if (!redTexture.loadFromFile("Textures/RedBulletTexture.png"))
+			if (!redTexture.loadFromFile("../Textures/RedBulletTexture.png"))
 			{
 				cout << "LOAD ENEMY TEXTURE FAILED" << endl;
 			}
 			this->bulletSpeed = 30;
 			this->bullet.setTexture(redTexture);
-			this->bullet.scale(0.1, 0.1);
+			this->bullet.scale(Vector2f(0.1, 0.1));
 			this->bulletStrenght = 1.f;
 		}
 	}
 
-	this->bullet.setPosition(pos_x - (this->bullet.getGlobalBounds().width / 2), (pos_y - this->bullet.getGlobalBounds().height));
+	this->bullet.setPosition(Vector2f(pos_x - (this->bullet.getGlobalBounds().width / 2), (pos_y - this->bullet.getGlobalBounds().height)));
 }
 
 Bullet::~Bullet()
@@ -55,7 +55,7 @@ const string Bullet::getBulletType() const
 
 void Bullet::setBulletPosition(float x, float y)
 {
-	this->bullet.setPosition(x, y);
+	this->bullet.setPosition(Vector2f(x, y));
 }
 
 const Vector2f Bullet::getBulletPos() const

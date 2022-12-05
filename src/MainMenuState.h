@@ -14,7 +14,7 @@ private:
 	Texture startGameButtonTexture;
 	Texture backgroundTexture;
 
-	Font font;
+	sf::Font font;
 
 	void initObjects();
 

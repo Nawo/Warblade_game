@@ -33,7 +33,7 @@ void Player::initVariables()
 void Player::initPlayer()
 {
 
-	if (!this->playerTexture.loadFromFile("Textures/playerTexture.png"))
+	if (!this->playerTexture.loadFromFile("../Textures/playerTexture.png"))
 	{
 		cout << "LOAD PLAYER TEXTURE FAILED" << endl;
 		system("pause");
@@ -41,7 +41,7 @@ void Player::initPlayer()
 
 	this->player.setTexture(this->playerTexture);
 
-	this->player.scale(0.19, 0.19);
+	this->player.scale(Vector2f(0.19, 0.19));
 
 	cout << "Player texture loaded" << endl;
 
@@ -71,7 +71,7 @@ const int& Player::getPlayerHpMax() const
 
 void Player::setPosition(const RenderTarget* target)
 {
-	this->player.setPosition(((target->getSize().x / 2) - (this->player.getGlobalBounds().width / 2)), (target->getSize().y - this->player.getGlobalBounds().height - 50));
+	this->player.setPosition(Vector2f(((target->getSize().x / 2) - (this->player.getGlobalBounds().width / 2)), (target->getSize().y - this->player.getGlobalBounds().height - 50)));
 }
 
 void Player::removeHp(const int hp)
@@ -110,16 +110,16 @@ void Player::playerMove(const RenderTarget* target, const float& dt, const float
 	{
 		if ((this->player.getPosition().x + this->player.getGlobalBounds().width) < target->getSize().x) // Jezeli gracz nie jest w prawej granicy ekranu
 		{
-			this->player.move((this->movementSpeed * dirX * dt), (this->movementSpeed * dirY * dt)); // Porusz gracza w obojetnym kierunku
+			this->player.move(Vector2f((this->movementSpeed * dirX * dt), (this->movementSpeed * dirY * dt))); // Porusz gracza w obojetnym kierunku
 		}
 		else if (dirX < 0) // Jesli gracz jest w prawej granicy ekranu ale chcemy go poruszyc w lewo
 		{
-			this->player.move((this->movementSpeed * dirX * dt), (this->movementSpeed * dirY * dt)); // Porusz gracza w lewo
+			this->player.move(Vector2f((this->movementSpeed * dirX * dt), (this->movementSpeed * dirY * dt))); // Porusz gracza w lewo
 		}
 	}
 	else if (dirX > 0) // Jezeli gracz jest w lewej granicy ekranu ale chcemy go poruszyc w prawo
 	{
-		this->player.move((this->movementSpeed * dirX * dt), (this->movementSpeed * dirY * dt)); // Porusz gracza w prawo
+		this->player.move(Vector2f((this->movementSpeed * dirX * dt), (this->movementSpeed * dirY * dt))); // Porusz gracza w prawo
 	}
 }
 

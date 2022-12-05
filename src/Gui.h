@@ -26,7 +26,7 @@ private:
 	RectangleShape backSPEEDbar;
 	RectangleShape SPEEDbar;
 
-	Font font;
+	sf::Font font;
 
 	stringstream ss;
 

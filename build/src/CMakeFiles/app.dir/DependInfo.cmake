@@ -22,7 +22,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/roman/Projects/Warblade/Warblade_game/src/MainMenuState.cpp" "src/CMakeFiles/app.dir/MainMenuState.cpp.o" "gcc" "src/CMakeFiles/app.dir/MainMenuState.cpp.o.d"
   "/home/roman/Projects/Warblade/Warblade_game/src/MenuState.cpp" "src/CMakeFiles/app.dir/MenuState.cpp.o" "gcc" "src/CMakeFiles/app.dir/MenuState.cpp.o.d"
   "/home/roman/Projects/Warblade/Warblade_game/src/Player.cpp" "src/CMakeFiles/app.dir/Player.cpp.o" "gcc" "src/CMakeFiles/app.dir/Player.cpp.o.d"
-  "/home/roman/Projects/Warblade/Warblade_game/src/StartGameState.cpp" "src/CMakeFiles/app.dir/StartGameState.cpp.o" "gcc" "src/CMakeFiles/app.dir/StartGameState.cpp.o.d"
   "/home/roman/Projects/Warblade/Warblade_game/src/State.cpp" "src/CMakeFiles/app.dir/State.cpp.o" "gcc" "src/CMakeFiles/app.dir/State.cpp.o.d"
   "/home/roman/Projects/Warblade/Warblade_game/src/main.cpp" "src/CMakeFiles/app.dir/main.cpp.o" "gcc" "src/CMakeFiles/app.dir/main.cpp.o.d"
   )

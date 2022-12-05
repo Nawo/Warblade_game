@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <vector>
-#include <windows.h>
 #include <string>
 #include <cmath>
 #include <cstdlib>

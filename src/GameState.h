@@ -11,7 +11,7 @@ private:
 	//Game
 	bool gameOver = false;
 	int level = 1;
-	ULONGLONG currentTime;
+	long long currentTime;
 
     // Player
     Player* player;

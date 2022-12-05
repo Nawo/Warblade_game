@@ -265,24 +265,10 @@ src/CMakeFiles/app.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/Player.cpp.s"
 	cd /home/roman/Projects/Warblade/Warblade_game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/Projects/Warblade/Warblade_game/src/Player.cpp -o CMakeFiles/app.dir/Player.cpp.s
 
-src/CMakeFiles/app.dir/StartGameState.cpp.o: src/CMakeFiles/app.dir/flags.make
-src/CMakeFiles/app.dir/StartGameState.cpp.o: /home/roman/Projects/Warblade/Warblade_game/src/StartGameState.cpp
-src/CMakeFiles/app.dir/StartGameState.cpp.o: src/CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/app.dir/StartGameState.cpp.o"
-	cd /home/roman/Projects/Warblade/Warblade_game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/app.dir/StartGameState.cpp.o -MF CMakeFiles/app.dir/StartGameState.cpp.o.d -o CMakeFiles/app.dir/StartGameState.cpp.o -c /home/roman/Projects/Warblade/Warblade_game/src/StartGameState.cpp
-
-src/CMakeFiles/app.dir/StartGameState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/StartGameState.cpp.i"
-	cd /home/roman/Projects/Warblade/Warblade_game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/Projects/Warblade/Warblade_game/src/StartGameState.cpp > CMakeFiles/app.dir/StartGameState.cpp.i
-
-src/CMakeFiles/app.dir/StartGameState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/StartGameState.cpp.s"
-	cd /home/roman/Projects/Warblade/Warblade_game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/Projects/Warblade/Warblade_game/src/StartGameState.cpp -o CMakeFiles/app.dir/StartGameState.cpp.s
-
 src/CMakeFiles/app.dir/State.cpp.o: src/CMakeFiles/app.dir/flags.make
 src/CMakeFiles/app.dir/State.cpp.o: /home/roman/Projects/Warblade/Warblade_game/src/State.cpp
 src/CMakeFiles/app.dir/State.cpp.o: src/CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/app.dir/State.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/app.dir/State.cpp.o"
 	cd /home/roman/Projects/Warblade/Warblade_game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/app.dir/State.cpp.o -MF CMakeFiles/app.dir/State.cpp.o.d -o CMakeFiles/app.dir/State.cpp.o -c /home/roman/Projects/Warblade/Warblade_game/src/State.cpp
 
 src/CMakeFiles/app.dir/State.cpp.i: cmake_force
@@ -296,7 +282,7 @@ src/CMakeFiles/app.dir/State.cpp.s: cmake_force
 src/CMakeFiles/app.dir/main.cpp.o: src/CMakeFiles/app.dir/flags.make
 src/CMakeFiles/app.dir/main.cpp.o: /home/roman/Projects/Warblade/Warblade_game/src/main.cpp
 src/CMakeFiles/app.dir/main.cpp.o: src/CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/app.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/app.dir/main.cpp.o"
 	cd /home/roman/Projects/Warblade/Warblade_game/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/app.dir/main.cpp.o -MF CMakeFiles/app.dir/main.cpp.o.d -o CMakeFiles/app.dir/main.cpp.o -c /home/roman/Projects/Warblade/Warblade_game/src/main.cpp
 
 src/CMakeFiles/app.dir/main.cpp.i: cmake_force
@@ -323,7 +309,6 @@ app_OBJECTS = \
 "CMakeFiles/app.dir/MainMenuState.cpp.o" \
 "CMakeFiles/app.dir/MenuState.cpp.o" \
 "CMakeFiles/app.dir/Player.cpp.o" \
-"CMakeFiles/app.dir/StartGameState.cpp.o" \
 "CMakeFiles/app.dir/State.cpp.o" \
 "CMakeFiles/app.dir/main.cpp.o"
 
@@ -344,7 +329,6 @@ src/app: src/CMakeFiles/app.dir/Levels.cpp.o
 src/app: src/CMakeFiles/app.dir/MainMenuState.cpp.o
 src/app: src/CMakeFiles/app.dir/MenuState.cpp.o
 src/app: src/CMakeFiles/app.dir/Player.cpp.o
-src/app: src/CMakeFiles/app.dir/StartGameState.cpp.o
 src/app: src/CMakeFiles/app.dir/State.cpp.o
 src/app: src/CMakeFiles/app.dir/main.cpp.o
 src/app: src/CMakeFiles/app.dir/build.make
@@ -364,7 +348,7 @@ src/app: /home/roman/Projects/Warblade/Warblade_game/src/../SFML/build/lib/libsf
 src/app: /home/roman/Projects/Warblade/Warblade_game/src/../SFML/build/lib/libsfml-window.so.3.0
 src/app: /home/roman/Projects/Warblade/Warblade_game/src/../SFML/build/lib/libsfml-window.so.3.0.0
 src/app: src/CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roman/Projects/Warblade/Warblade_game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable app"
 	cd /home/roman/Projects/Warblade/Warblade_game/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

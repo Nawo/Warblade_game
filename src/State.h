@@ -9,9 +9,9 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 
+#include <time.h>
 #include <iostream>
 #include <vector>
-#include <windows.h>
 #include <string>
 #include <cmath>
 #include <cstdlib>

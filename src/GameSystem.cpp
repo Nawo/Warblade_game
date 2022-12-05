@@ -55,8 +55,8 @@ void GameSystem::endApplication()
 void GameSystem::initWindow()
 {
 
-	this->videoMode.height = 720;
-	this->videoMode.width = 1280;
+	this->videoMode.size.y = 720;
+	this->videoMode.size.x = 1280;
 
 	this->window = new RenderWindow(this->videoMode, "Warblade project by Roman Nawrot", Style::Titlebar | Style::Close);
 

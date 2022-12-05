@@ -27,8 +27,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/MenuState.cpp.o.d"
   "CMakeFiles/app.dir/Player.cpp.o"
   "CMakeFiles/app.dir/Player.cpp.o.d"
-  "CMakeFiles/app.dir/StartGameState.cpp.o"
-  "CMakeFiles/app.dir/StartGameState.cpp.o.d"
   "CMakeFiles/app.dir/State.cpp.o"
   "CMakeFiles/app.dir/State.cpp.o.d"
   "CMakeFiles/app.dir/main.cpp.o"

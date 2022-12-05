@@ -27,7 +27,7 @@ void MainMenuState::endState()
 
 void MainMenuState::initObjects()
 {
-	if (!this->startGameButtonTexture.loadFromFile("Textures/MainMenu/StartGameButton.png"))
+	if (!this->startGameButtonTexture.loadFromFile("../Textures/MainMenu/StartGameButton.png"))
 	{
 		cout << "LOAD MAINMENU STARTGAMEBUTTON TEXTURE FAILED" << endl;
 	}
@@ -35,7 +35,7 @@ void MainMenuState::initObjects()
 	this->startGameButton.setSize(Vector2f(400, 400));
 	this->startGameButton.setPosition(Vector2f(440, 300));
 
-	if (!this->backgroundTexture.loadFromFile("Textures/MainMenu/Background.jpg"))
+	if (!this->backgroundTexture.loadFromFile("../Textures/MainMenu/Background.jpg"))
 	{
 		cout << "LOAD MAINMENU BACKGROUND1 TEXTURE FAILED" << endl;
 	}
@@ -43,7 +43,7 @@ void MainMenuState::initObjects()
 	this->background.setSize(Vector2f(1280, 720));
 	this->background.setPosition(Vector2f(0, 0));
 
-	if (!font.loadFromFile("Fonts\\No Virus.ttf"))
+	if (!font.loadFromFile("../Fonts/No Virus.ttf"))
 	{
 		cout << "FAILED GUI FONTS LOAD!" << endl;
 	}

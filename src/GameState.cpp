@@ -6,6 +6,14 @@
 //
 //////////////////////////////////////////////////
 
+double GetTickCount(void)
+{
+	struct timespec now;
+	if (clock_gettime(CLOCK_MONOTONIC, &now))
+		return 0;
+	return now.tv_sec * 1000.0 + now.tv_nsec / 1000000.0;
+}
+
 GameState::GameState(RenderWindow* window)
 	: State(window)
 {
@@ -70,7 +78,7 @@ void GameState::initEnemy()
 {
 	if (this->canSpawnEnemy == true)
 	{
-		this->currentTime = GetTickCount64();
+		this->currentTime = GetTickCount();
 		if (this->secondEnemySpawnTime - this->firstEnemySpawnTime > this->spawnEnemyCooldownInMillis)
 		{
 			this->enemies.push_back(
@@ -150,7 +158,7 @@ void GameState::updateInput(RenderTarget* target, const float& dt)
 	///////////// STRZELANIE ////////////
 	if (Keyboard::isKeyPressed(Keyboard::LControl))
 	{
-		currentTime = GetTickCount64();
+		currentTime = GetTickCount();
 		if (this->player->canAttack == true)
 		{
 			this->initBullet((this->player->getPlayerPos().x + (this->player->getPlayerBounds().width / 2.f)), (this->player->getPlayerPos().y) + 20, "playerShot", "default");
@@ -248,7 +256,7 @@ void GameState::updateBulletPlayer(RenderTarget* target)
 	for (auto* bullet : this->bullets)
 	{
 
-		if (bullet->getBulletBounds().intersects(this->player->getPlayerBounds()))
+		if (bullet->getBulletBounds().findIntersection(this->player->getPlayerBounds()))
 		{
 			if (bullet->getBulletType() == "enemyShot" &&  // jezeli bullet jest od enemy
 				bullet_deleted == false)
@@ -309,7 +317,7 @@ void GameState::updateBulletEnemy(RenderTarget* target)
 		counter_enemy = 0;
 		for (auto* enemy : this->enemies)
 		{
-			if (bullet->getBulletBounds().intersects(enemy->getEnemyBounds())) // Sprawdzanie czy bullet trafil w enemy 
+			if (bullet->getBulletBounds().findIntersection(enemy->getEnemyBounds())) // Sprawdzanie czy bullet trafil w enemy 
 			{
 				if (bullet->getBulletType() != "enemyShot"  // jesli bullet nie jest od enemy (zeby enemy nie zabijali enemy)
 					&& enemy_deleted == false

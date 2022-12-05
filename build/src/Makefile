@@ -531,30 +531,6 @@ Player.cpp.s:
 	cd /home/roman/Projects/Warblade/Warblade_game/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
-StartGameState.o: StartGameState.cpp.o
-.PHONY : StartGameState.o
-
-# target to build an object file
-StartGameState.cpp.o:
-	cd /home/roman/Projects/Warblade/Warblade_game/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/StartGameState.cpp.o
-.PHONY : StartGameState.cpp.o
-
-StartGameState.i: StartGameState.cpp.i
-.PHONY : StartGameState.i
-
-# target to preprocess a source file
-StartGameState.cpp.i:
-	cd /home/roman/Projects/Warblade/Warblade_game/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/StartGameState.cpp.i
-.PHONY : StartGameState.cpp.i
-
-StartGameState.s: StartGameState.cpp.s
-.PHONY : StartGameState.s
-
-# target to generate assembly for a file
-StartGameState.cpp.s:
-	cd /home/roman/Projects/Warblade/Warblade_game/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app.dir/build.make src/CMakeFiles/app.dir/StartGameState.cpp.s
-.PHONY : StartGameState.cpp.s
-
 State.o: State.cpp.o
 .PHONY : State.o
 
@@ -660,9 +636,6 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
-	@echo "... StartGameState.o"
-	@echo "... StartGameState.i"
-	@echo "... StartGameState.s"
 	@echo "... State.o"
 	@echo "... State.i"
 	@echo "... State.s"

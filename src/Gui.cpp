@@ -3,18 +3,18 @@
 Gui::Gui()
 {
 
-	if (!font.loadFromFile("Fonts\\No Virus.ttf"))
+	if (!font.loadFromFile("../Fonts/No Virus.ttf"))
 	{
 		cout << "FAILED GUI FONTS LOAD!" << endl;
 	}
 
 	// HP BAR
 	this->backHPbar.setSize(Vector2f(280, 20));
-	this->backHPbar.setPosition(10, 680);
-	this->backHPbar.setFillColor(Color::Color(105, 105, 105, 255));
+	this->backHPbar.setPosition(Vector2f(10, 680));
+	this->backHPbar.setFillColor(Color::White);
 
 	this->HPbar.setSize(Vector2f(280, 20));
-	this->HPbar.setPosition(10, 680);
+	this->HPbar.setPosition(Vector2f(10, 680));
 	this->HPbar.setFillColor(Color::Green);
 
 	// LEVEL TEXT

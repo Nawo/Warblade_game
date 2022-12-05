@@ -10,7 +10,6 @@
 #include <iostream>
 #include <float.h>
 
-
 using namespace sf;
 using namespace std;
 

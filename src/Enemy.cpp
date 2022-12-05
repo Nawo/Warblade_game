@@ -18,12 +18,12 @@ void Enemy::initEnemy(int type)
 	if (type == 1)
 	{
 
-		if (!this->enemyTexture.loadFromFile("Textures/enemyTexture.png"))
+		if (!this->enemyTexture.loadFromFile("../Textures/enemyTexture.png"))
 		{
 			cout << "LOAD ENEMY TEXTURE FAILED" << endl;
 		}
 		this->enemy.setTexture(this->enemyTexture);
-		this->enemy.scale(0.3, 0.3);
+		this->enemy.scale(Vector2f(0.3, 0.3));
 		this->enemy.setColor(Color::White);
 
 		mt19937 rng(rd());
@@ -42,12 +42,12 @@ void Enemy::initEnemy(int type)
 	else if (type == 2)
 	{
 
-		if (!this->enemyTexture.loadFromFile("Textures/enemyTexture.png"))
+		if (!this->enemyTexture.loadFromFile("../Textures/enemyTexture.png"))
 		{
 			cout << "LOAD ENEMY TEXTURE FAILED" << endl;
 		}
 		this->enemy.setTexture(this->enemyTexture);
-		this->enemy.scale(0.3, 0.3);
+		this->enemy.scale(Vector2f(0.3, 0.3));
 		this->enemy.setColor(Color::Green);
 
 		mt19937 rng(rd());
@@ -65,12 +65,12 @@ void Enemy::initEnemy(int type)
 
 	else if (type == 3)
 	{
-		if (!this->enemyTexture.loadFromFile("Textures/enemyTexture.png"))
+		if (!this->enemyTexture.loadFromFile("../Textures/enemyTexture.png"))
 		{
 			cout << "LOAD ENEMY TEXTURE FAILED" << endl;
 		}
 		this->enemy.setTexture(this->enemyTexture);
-		this->enemy.scale(0.3, 0.3);
+		this->enemy.scale(Vector2f(0.3, 0.3));
 		this->enemy.setColor(Color::Red);
 
 		mt19937 rng(rd());
@@ -90,7 +90,7 @@ void Enemy::initEnemy(int type)
 
 void Enemy::setEnemyPosition(float x, float y)
 {
-	this->enemy.setPosition(x, y);
+	this->enemy.setPosition(Vector2f(x, y));
 }
 
 const Vector2f Enemy::getEnemyPos() const

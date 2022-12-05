@@ -1,14 +1,14 @@
-#include "gamesound.h"
+#include "GameSound.h"
 
 GameSound::GameSound()
 {
-	if (!this->backgroundMusic.openFromFile("Sounds\\backgroundMusic.ogg"))
+	if (!this->backgroundMusic.openFromFile("../Sounds/backgroundMusic.ogg"))
 	{
 		cout << "LOAD MUSIC FROM FILE ERROR" << endl;
 	}
 
 
-	if (!this->bufferShotSound.loadFromFile("Sounds\\bulletShotSound.wav"))
+	if (!this->bufferShotSound.loadFromFile("../Sounds/bulletShotSound.wav"))
 	{
 		cout << "LOAD BULLET SOUND FROM FILE ERROR" << endl;
 	}
@@ -16,14 +16,14 @@ GameSound::GameSound()
 	this->bulletShotSound.setBuffer(this->bufferShotSound);
 
 
-	if (!this->bufferEnemySound.loadFromFile("Sounds\\killEnemySound.wav"))
+	if (!this->bufferEnemySound.loadFromFile("../Sounds/killEnemySound.wav"))
 	{
 		cout << "LOAD KILL ENEMY SOUND FROM FILE ERROR" << endl;
 	}
 
 	this->killEnemySound.setBuffer(this->bufferEnemySound);
 
-	if (!this->bufferPlayerSound.loadFromFile("Sounds\\killPlayerSound.wav"))
+	if (!this->bufferPlayerSound.loadFromFile("../Sounds/killPlayerSound.wav"))
 	{
 		cout << "LOAD KILL PLAYER SOUND FROM FILE ERROR" << endl;
 	}
