@@ -4,11 +4,11 @@ file(GLOB CLASSES *.cpp)
 
 set(SOURCES ${CLASSES})
 
-add_executable(app
+add_executable(WarbladeApp
     ${SOURCES}
 )
 
 #find_package(SFML 2.5.1 COMPONENTS graphics audio network REQUIRED)
-target_include_directories(app PUBLIC ../SFML/include)
-file(GLOB SFML_LIBS ../SFML/build/lib/*)
-target_link_libraries(app ${SFML_LIBS})
+target_include_directories(WarbladeApp PUBLIC ../include)
+file(GLOB SFML_LIBS ../lib/sfml/*)
+target_link_libraries(WarbladeApp ${SFML_LIBS})

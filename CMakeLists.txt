@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.18)
-project(app)
+project(WarbladeApp)
 
 # set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/lib)
 # set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/lib)
@@ -18,5 +18,4 @@ project(app)
 # file(GLOB SFML_LIBS Lib/lib/*)
 # target_link_libraries(app ${SFML_LIBS})
 
-add_subdirectory(SFML)
 add_subdirectory(src)

@@ -6,12 +6,9 @@
 //
 //////////////////////////////////////////////////
 
-double GetTickCount(void)
+double GameState::GetTickCount(void)
 {
-	struct timespec now;
-	if (clock_gettime(CLOCK_MONOTONIC, &now))
-		return 0;
-	return now.tv_sec * 1000.0 + now.tv_nsec / 1000000.0;
+	return this->currentTime = GetTickCount64();
 }
 
 GameState::GameState(RenderWindow* window)
@@ -78,7 +75,6 @@ void GameState::initEnemy()
 {
 	if (this->canSpawnEnemy == true)
 	{
-		this->currentTime = GetTickCount();
 		if (this->secondEnemySpawnTime - this->firstEnemySpawnTime > this->spawnEnemyCooldownInMillis)
 		{
 			this->enemies.push_back(
@@ -88,14 +84,14 @@ void GameState::initEnemy()
 					/* Typ enemy				    */	player->getLevel()
 				)
 			);
-			this->firstEnemySpawnTime = this->currentTime;
+			this->firstEnemySpawnTime = GetTickCount();
 			this->enemyValue++;
 			this->currentEnemyValue++;
 			if (this->enemyValue >= 30)
 				this->canSpawnEnemy = false;
 		}
 		else
-			this->secondEnemySpawnTime = this->currentTime;
+			this->secondEnemySpawnTime = GetTickCount();
 	}
 }
 
@@ -158,15 +154,14 @@ void GameState::updateInput(RenderTarget* target, const float& dt)
 	///////////// STRZELANIE ////////////
 	if (Keyboard::isKeyPressed(Keyboard::LControl))
 	{
-		currentTime = GetTickCount();
 		if (this->player->canAttack == true)
 		{
 			this->initBullet((this->player->getPlayerPos().x + (this->player->getPlayerBounds().width / 2.f)), (this->player->getPlayerPos().y) + 20, "playerShot", "default");
-			this->player->firstAttackTime = currentTime;
+			this->player->firstAttackTime = GetTickCount();
 			this->gameSound->playSound("bulletShot", 1);
 		}
 		else
-			this->player->secondAttackTime = currentTime;
+			this->player->secondAttackTime = GetTickCount();
 	}
 }
 

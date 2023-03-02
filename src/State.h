@@ -9,9 +9,9 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 
-#include <time.h>
 #include <iostream>
 #include <vector>
+#include <windows.h>
 #include <string>
 #include <cmath>
 #include <cstdlib>
@@ -20,7 +20,6 @@
 #include <math.h>
 #include <random>
 #include <sstream>
-#include <X11/extensions/Xrandr.h>
 
 #include "Bullet.h"
 #include "Enemy.h"

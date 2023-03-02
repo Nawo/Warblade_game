@@ -11,7 +11,9 @@ private:
 	//Game
 	bool gameOver = false;
 	int level = 1;
-	long long currentTime;
+	ULONGLONG currentTime;
+
+	double GetTickCount(void);
 
     // Player
     Player* player;

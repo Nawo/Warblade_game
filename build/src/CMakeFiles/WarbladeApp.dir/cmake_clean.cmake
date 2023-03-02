@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/WarbladeApp.dir/Background.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Background.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Bullet.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Bullet.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Enemy.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Enemy.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Entity.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Entity.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Game.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Game.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/GameSound.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/GameSound.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/GameState.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/GameState.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/GameSystem.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/GameSystem.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Gui.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Gui.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Items.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Items.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Levels.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Levels.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/MainMenuState.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/MainMenuState.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/MenuState.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/MenuState.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/Player.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/Player.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/State.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/State.cpp.obj.d"
+  "CMakeFiles/WarbladeApp.dir/main.cpp.obj"
+  "CMakeFiles/WarbladeApp.dir/main.cpp.obj.d"
+  "WarbladeApp.exe"
+  "WarbladeApp.exe.manifest"
+  "WarbladeApp.pdb"
+  "libWarbladeApp.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/WarbladeApp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
